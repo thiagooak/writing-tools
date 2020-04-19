@@ -17,7 +17,7 @@ pub fn sentence_length(content: String) -> Vec<crate::Error> {
             long_sentences.push(sentence);
             errors.push(crate::Error {
                 original: String::from(sentence),
-                suggestion: String::from(""),
+                suggestion: String::from("Too many long sentences"),
                 index_start: index,
                 index_end: index + sentence.len(),
             });
@@ -50,7 +50,7 @@ fn test_check_sentence_length() {
         original: String::from(
             "Vivamus lacinia, libero ac lobortis iaculis, dui dui malesuada diam, eu interdum tellus risus nec leo class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos",
         ),
-        suggestion: String::from(""),
+        suggestion: String::from("Too many long sentences"),
         index_start: 0,
         index_end: 192,
     };
