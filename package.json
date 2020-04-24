@@ -1,0 +1,19 @@
+{
+  "name": "writing-tools",
+  "version": "0.2.0",
+  "description": "A style checker for technical writers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thiagooak/writing-tools.git"
+  },
+  "author": "Thiago Carvalho <thiago.oak@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thiagooak/writing-tools/issues"
+  },
+  "homepage": "https://github.com/thiagooak/writing-tools#readme"
+}
