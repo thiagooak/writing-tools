@@ -4,6 +4,7 @@ import longWords from "./check/longWords";
 import cutWords from "./check/cutWords";
 import errorsToMarkers from "./marker";
 import verbQualifiers from "./check/verbQualifiers";
+import adverbs from "./check/adverbs";
 
 function runChecks(input) {
   let errors = [];
@@ -12,7 +13,8 @@ function runChecks(input) {
       longSentence(input),
       longWords(input),
       cutWords(input),
-      verbQualifiers(input)
+      verbQualifiers(input),
+      adverbs(input)
     )
   );
 }
