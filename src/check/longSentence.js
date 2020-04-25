@@ -1,4 +1,4 @@
-export default function checkLongSentence(input) {
+export default function longSentence(input) {
   const sentences = input.split(".");
 
   let longSentences = [];

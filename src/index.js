@@ -1,12 +1,13 @@
 /* istanbul ignore file */
-import checkLongSentence from "./checkLongSentence";
-import checkLongWords from "./checkLongWords";
+import longSentence from "./check/longSentence";
+import longWords from "./check/longWords";
+import cutWords from "./check/cutWords";
 import errorsToMarkers from "./marker";
 
 function runChecks(input) {
   let errors = [];
   return errorsToMarkers(
-    errors.concat(checkLongSentence(input), checkLongWords(input))
+    errors.concat(longSentence(input), longWords(input), cutWords(input))
   );
 }
 

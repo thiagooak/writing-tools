@@ -1,20 +1,11 @@
-export default function checkLongWords(input) {
+export default function cutWords(input) {
   input = input.toLowerCase();
 
   let words = {
-    approximately: "about",
-    demonstrate: "show",
-    establish: "set up",
-    expenditure: "spending",
-    facility: "plant, club, warehouse, etc",
-    following: "after",
-    however: "but",
-    manufacture: "make",
-    participate: "take part",
-    permit: "let",
-    "prior to": "before",
-    sufficient: "enough",
-    utilise: "use",
+    currently: 1,
+    actually: 1,
+    really: 1,
+    "so-called": 1,
   };
 
   let errors = [];
@@ -29,7 +20,7 @@ export default function checkLongWords(input) {
         input: word,
         start: start,
         end: end,
-        suggestion: `simplify: ${words[word]}`,
+        suggestion: `cut`,
       };
 
       errors.push(error);

@@ -1,7 +1,7 @@
-import checkLongWords from "./checkLongWords";
+import longWords from "./longWords";
 
 test("however", () => {
-  expect(checkLongWords("This demonstrates it")).toStrictEqual([
+  expect(longWords("This demonstrates it")).toStrictEqual([
     { start: 5, end: 16, input: "demonstrate", suggestion: "simplify: show" },
   ]);
 });

@@ -1,8 +1,8 @@
-import checkLongSentence from "./checkLongSentence";
+import longSentence from "./longSentence";
 
 test("short sentence", () => {
   expect(
-    checkLongSentence(
+    longSentence(
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum sollicitudin ligula, fringilla porta tellus tincidunt id."
     )
   ).toStrictEqual([]);
@@ -10,7 +10,7 @@ test("short sentence", () => {
 
 test("long sentence", () => {
   expect(
-    checkLongSentence(
+    longSentence(
       "Nam rutrum sollicitudin ligula, fringilla porta tellus tincidunt id nam rutrum sollicitudin ligula, fringilla porta tellus tincidunt id."
     )
   ).toStrictEqual([
@@ -26,7 +26,7 @@ test("long sentence", () => {
 
 test("long sentence preceeded by newlines", () => {
   expect(
-    checkLongSentence(
+    longSentence(
       "abcd.\n\n\nNam rutrum sollicitudin ligula, fringilla porta tellus tincidunt id nam rutrum sollicitudin ligula, fringilla porta tellus tincidunt id."
     )
   ).toStrictEqual([

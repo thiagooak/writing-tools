@@ -1,6 +1,6 @@
 {
-  "name": "writing-tools",
-  "version": "0.2.0",
+  "name": "@writing-tools/writing-tools",
+  "version": "0.2.1",
   "description": "A style checker for technical writers",
   "main": "src/index.js",
   "scripts": {
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thiagooak/writing-tools.git"
+    "url": "git+https://github.com/writing-tools/writing-tools.git"
   },
   "author": "Thiago Carvalho <thiago.oak@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/thiagooak/writing-tools/issues"
+    "url": "https://github.com/writing-tools/writing-tools/issues"
   },
-  "homepage": "https://github.com/thiagooak/writing-tools#readme",
+  "homepage": "https://github.com/writing-tools/writing-tools#readme",
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.0",
