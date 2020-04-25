@@ -2,9 +2,9 @@
   "name": "writing-tools",
   "version": "0.2.0",
   "description": "A style checker for technical writers",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,25 @@
   "bugs": {
     "url": "https://github.com/thiagooak/writing-tools/issues"
   },
-  "homepage": "https://github.com/thiagooak/writing-tools#readme"
+  "homepage": "https://github.com/thiagooak/writing-tools#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "jest-cli": "^25.4.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "src/*.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 60,
+        "functions": 60,
+        "lines": 60,
+        "statements": 60
+      }
+    }
+  }
 }
