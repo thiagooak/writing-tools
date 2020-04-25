@@ -3,11 +3,17 @@ import longSentence from "./check/longSentence";
 import longWords from "./check/longWords";
 import cutWords from "./check/cutWords";
 import errorsToMarkers from "./marker";
+import verbQualifiers from "./check/verbQualifiers";
 
 function runChecks(input) {
   let errors = [];
   return errorsToMarkers(
-    errors.concat(longSentence(input), longWords(input), cutWords(input))
+    errors.concat(
+      longSentence(input),
+      longWords(input),
+      cutWords(input),
+      verbQualifiers(input)
+    )
   );
 }
 
